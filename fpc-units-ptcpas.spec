@@ -1,20 +1,19 @@
 #set fpc version
-
+Epoch: 1
 %define fpc_ver 2.4.4
 
 %define self ptcpas
 
-
 Name:		fpc-units-%self
 # svn info -r HEAD https://ptcpas.svn.sourceforge.net/svnroot/ptcpas/trunk | grep Revision
-Version:	503
+Version:	0.99.12
 Release:	%mkrel 1
 Group:		Development/Other
 License:	Modified LGPL
 Summary:	A free, portable framebuffer library, written in Free Pascal
 # svn co https://ptcpas.svn.sourceforge.net/svnroot/ptcpas/trunk ptcpas-402
-Source:		%self-%version.tar.gz
-Patch0:		ptcpas-%version-fpcdir.patch
+Source:		%self-%version.tar.bz2
+Patch0:		%self-503-fpcdir.patch
 URL:		http://ptcpas.sourceforge.net/
 
 BuildRequires: fpc == %fpc_ver

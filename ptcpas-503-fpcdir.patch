@@ -1,0 +1,12 @@
+--- ptcpas-503/Makefile.fpc.old	2011-08-20 15:31:03.000000000 +0400
++++ ptcpas-503/Makefile.fpc	2011-08-20 15:32:56.736442462 +0400
+@@ -6,6 +6,9 @@
+ name=ptc
+ version=0.99.11
+ 
++[default]
++fpcdir=/usr/share/fpcsrc
++
+ [target]
+ units=ptc ptcwrapper ptcgraph ptccrt
+ exampledirs=demos examples test

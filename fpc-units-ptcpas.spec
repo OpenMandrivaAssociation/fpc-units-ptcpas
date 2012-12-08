@@ -1,26 +1,36 @@
 #set fpc version
-Epoch: 1
-%define fpc_ver 2.4.4
+
+%define fpc_ver 2.6.0
 
 %define self ptcpas
 
+
 Name:		fpc-units-%self
 # svn info -r HEAD https://ptcpas.svn.sourceforge.net/svnroot/ptcpas/trunk | grep Revision
-Version:	0.99.12
-Release:	%mkrel 1
+Version:	503
+Release:	2
 Group:		Development/Other
 License:	Modified LGPL
 Summary:	A free, portable framebuffer library, written in Free Pascal
 # svn co https://ptcpas.svn.sourceforge.net/svnroot/ptcpas/trunk ptcpas-402
-Source:		%self-%version.tar.bz2
-Patch0:		%self-503-fpcdir.patch
+Source:		%self-%version.tar.gz
+Patch0:		ptcpas-%version-fpcdir.patch
 URL:		http://ptcpas.sourceforge.net/
 
 BuildRequires: fpc == %fpc_ver
-BuildRequires: %{_lib}x11-devel %{_lib}xext-devel %{_lib}xrandr2-devel %{_lib}xxf86dga-devel %{_lib}xxf86vm-devel fpc-src
+BuildRequires: %{_lib}x11-devel
+BuildRequires: %{_lib}xext-devel
+BuildRequires: pkgconfig(xrandr)
+BuildRequires: %{_lib}xxf86dga-devel
+BuildRequires: %{_lib}xxf86vm-devel
+BuildRequires: fpc-src
 
 Requires: fpc-base == %fpc_ver
-Requires: %{_lib}x11-devel %{_lib}xext-devel %{_lib}xrandr2-devel %{_lib}xxf86dga-devel %{_lib}xxf86vm-devel
+Requires: %{_lib}x11-devel
+Requires: %{_lib}xext-devel 
+Requires: pkgconfig(xrandr)
+Requires: %{_lib}xxf86dga-devel
+Requires: %{_lib}xxf86vm-devel
 
 %description
 PTCPas is a free, portable framebuffer library, written in Free Pascal.
@@ -74,4 +84,11 @@ install -D ptcpas.cfg %buildroot%_sysconfdir/%self.conf
 
 %files demos
 %_libdir/%name-demos
+
+
+
+%changelog
+* Sat Aug 20 2011 Александр Казанцев <kazancas@mandriva.org> 503-1mdv2012.0
++ Revision: 695900
+- imported package fpc-units-ptcpas
 

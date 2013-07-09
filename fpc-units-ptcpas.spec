@@ -20,6 +20,7 @@ BuildRequires:	pkgconfig(xext)
 BuildRequires:	pkgconfig(xf86dgaproto)
 BuildRequires:	pkgconfig(xrandr)
 BuildRequires:	pkgconfig(xxf86vm)
+BuildRequires:	pkgconfig(xxf86dga)
 Requires:	fpc-base == %{fpc_ver}
 Requires:	pkgconfig(x11)
 Requires:	pkgconfig(xext)

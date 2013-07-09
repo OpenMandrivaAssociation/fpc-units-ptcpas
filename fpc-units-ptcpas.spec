@@ -1,5 +1,6 @@
 %define fpc_ver 2.6.2
 %define oname ptcpas
+%define debug_package          %{nil}
 
 Summary:	A free, portable framebuffer library, written in Free Pascal
 Name:		fpc-units-%{oname}

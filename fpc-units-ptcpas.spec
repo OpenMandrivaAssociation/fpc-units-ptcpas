@@ -1,4 +1,4 @@
-%define fpc_ver 2.6.0
+%define fpc_ver 2.6.2
 %define oname ptcpas
 
 Summary:	A free, portable framebuffer library, written in Free Pascal

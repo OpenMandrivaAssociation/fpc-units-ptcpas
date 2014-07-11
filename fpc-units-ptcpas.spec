@@ -5,7 +5,7 @@
 Summary:	A free, portable framebuffer library, written in Free Pascal
 Name:		fpc-units-%{oname}
 Version:	503
-Release:	7
+Release:	8
 Group:		Development/Other
 License:	Modified LGPL
 Url:		http://ptcpas.sourceforge.net/

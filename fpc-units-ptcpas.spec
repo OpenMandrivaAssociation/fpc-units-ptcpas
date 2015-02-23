@@ -1,11 +1,11 @@
-%define fpc_ver 2.6.2
+%define fpc_ver 2.6.4
 %define oname ptcpas
 %define debug_package          %{nil}
 
 Summary:	A free, portable framebuffer library, written in Free Pascal
 Name:		fpc-units-%{oname}
 Version:	503
-Release:	9
+Release:	10
 Group:		Development/Other
 License:	Modified LGPL
 Url:		http://ptcpas.sourceforge.net/

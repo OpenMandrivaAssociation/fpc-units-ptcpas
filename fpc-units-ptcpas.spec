@@ -8,7 +8,7 @@ Version:	503
 Release:	13
 Group:		Development/Other
 License:	Modified LGPL
-Url:		http://ptcpas.sourceforge.net/
+Url:		https://ptcpas.sourceforge.net/
 # svn info -r HEAD https://ptcpas.svn.sourceforge.net/svnroot/ptcpas/trunk | grep Revision
 # svn co https://ptcpas.svn.sourceforge.net/svnroot/ptcpas/trunk ptcpas-402
 Source0:	%{oname}-%{version}.tar.gz
